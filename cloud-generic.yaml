@@ -1,0 +1,21 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: ingress-nginx
+  namespace: ingress-nginx
+  labels:
+    app: ingress-nginx
+spec:
+  externalTrafficPolicy: Local
+  type: LoadBalancer
+  selector:
+    app: ingress-nginx
+  ports:
+  - name: anchor
+    port: 3000
+    protocol: TCP
+    targetPort: anchor
+  - name: unet
+    port: 7777
+    protocol: UDP
+    targetPort: unet
