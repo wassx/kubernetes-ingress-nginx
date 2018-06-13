@@ -11,10 +11,6 @@ spec:
   selector:
     app: ingress-nginx
   ports:
-  - name: anchor
-    port: 3000
-    protocol: TCP
-    targetPort: anchor
   - name: unet
     port: 7777
     protocol: UDP
