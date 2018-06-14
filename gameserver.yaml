@@ -1,10 +1,10 @@
-apiVersion: "stable.agon.io/v1alpha1"
+apiVersion: "stable.agones.dev/v1alpha1"
 kind: GameServer
 metadata:
-  name: holox-server
+  name: "holox-server"
 spec:
+  portPolicy: "dynamic"
   containerPort: 7777
-  # Pod template
   template:
     spec:
       containers:
