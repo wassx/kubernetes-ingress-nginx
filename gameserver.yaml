@@ -1,0 +1,12 @@
+apiVersion: "stable.agon.io/v1alpha1"
+kind: GameServer
+metadata:
+  name: holox-server
+spec:
+  containerPort: 7777
+  # Pod template
+  template:
+    spec:
+      containers:
+      - name: holox-server
+        image: wassx/holoxserver:1.0.6
