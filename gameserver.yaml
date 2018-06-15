@@ -1,7 +1,7 @@
 apiVersion: "stable.agones.dev/v1alpha1"
 kind: GameServer
 metadata:
-  name: "holox-server"
+  name: "holox-server2"
 spec:
   portPolicy: "dynamic"
   containerPort: 7777
