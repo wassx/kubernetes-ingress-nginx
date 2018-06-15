@@ -1,12 +1,12 @@
 apiVersion: "stable.agones.dev/v1alpha1"
 kind: GameServer
 metadata:
-  name: "holox-server2"
+  name: "holox-server3"
 spec:
   portPolicy: "dynamic"
   containerPort: 7777
   template:
     spec:
       containers:
-      - name: holox-server2
+      - name: holox-server3
         image: wassx/holoxserver:1.0.6
