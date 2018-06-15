@@ -8,5 +8,5 @@ spec:
   template:
     spec:
       containers:
-      - name: holox-server
+      - name: holox-server2
         image: wassx/holoxserver:1.0.6
